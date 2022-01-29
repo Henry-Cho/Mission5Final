@@ -1206,7 +1206,7 @@
       "outputPath": "/Users/hyungseokcho/Projects/Mission5/Mission5/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/hyungseokcho/.nuget/NuGet/NuGet.Config"
+        "/Users/hyungseokcho/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
