@@ -47,4 +47,9 @@
     <br />
     <button id="btn" type="submit">Save</button>
     <div asp-validation-summary="All;"></div>
+    @if (ViewBag.New == false)
+    {
+        <input type="hidden" asp-for="MovieId" />
+    }
+
 </form>

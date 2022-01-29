@@ -6,7 +6,7 @@ namespace Mission5.Models
     public class Category
     {
         [Key]
-        [Required]
+        [Required(ErrorMessage = "Category is required")]
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
     }

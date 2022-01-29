@@ -43,6 +43,7 @@ namespace Mission5.Controllers
         [HttpPost]
         public IActionResult NewMovie(ApplicationResponse ar)
         {
+            ViewBag.New = true;
             if (ModelState.IsValid)
             {
                 if (movie.Responses.Any(a => a.Title.Equals(ar.Title)))
@@ -60,6 +61,7 @@ namespace Mission5.Controllers
         [HttpGet]
         public IActionResult Edit(int recordId)
         {
+            ViewBag.New = false;
             ViewBag.Categories = movie.Categories.ToList();
 
             var application = movie.Responses.Single(x => x.MovieId == recordId);
