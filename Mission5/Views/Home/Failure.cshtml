@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Failure";
+}
+
+@model Mission5.Models.ApplicationResponse
+
+<div>@Model.Title is alreay in the database. You need a new one!</div>
+
+<a asp-controller="Home" asp-action="NewMovie">Retry</a>
