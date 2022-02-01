@@ -17,6 +17,7 @@ namespace Mission5.Models
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
+            // on Creating a model, seed these data in the database.
             mb.Entity<Category>().HasData(
                 new Category
                 {
