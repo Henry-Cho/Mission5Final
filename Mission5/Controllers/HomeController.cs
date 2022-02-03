@@ -96,6 +96,7 @@ namespace Mission5.Controllers
                 // show them in the index page
                 return RedirectToAction("Index");
             }
+            ViewBag.New = false;
             // if the model is not validated, get data from category model and show NewMoive cshtml
             ViewBag.Categories = movie.Categories.ToList();
             return View("NewMovie", ar);
